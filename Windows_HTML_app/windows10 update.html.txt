@@ -1,0 +1,307 @@
+ <html>
+<head>
+
+<script src="https://kit.fontawesome.com/06331e6e54.js" crossorigin="anonymous"></script>
+
+<style>
+body{
+	background-size: cover;
+}
+
+
+
+
+
+/*TASKBAR*/
+
+
+
+
+
+
+ul {
+	background-color: #F5755F;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 6%;
+	list-style-type: none;                   
+	margin: 0;
+	padding: 0;
+}
+li:not(input) { 
+	display: inline;
+	float: left;
+	height: 100%;
+	padding: 2px 16px 2px 16px;
+}
+.input{
+	border: inset;
+	background-color:#FFF4F4;
+	height: 98%; width: 250px;
+	box-sizing: border-box;
+	background-image: url('https://cdn3.vectorstock.com/i/1000x1000/71/12/realistic-magnifier-magnifying-glass-magnify-vector-23027112.jpg')
+	background-image-height: 6%; background-image-width: 1%;
+}
+li:hover{
+	background-color: #FF9999;
+	margin-bottom: 0;
+}
+.input:hover{
+	background-color: #FFFFFF;
+}
+
+.input:focus {
+	border-color: red;
+}	
+li.right{
+	display: inline;
+	float: right;
+	height: 100%;
+	align: center;
+}
+
+
+
+
+
+/*FOR DESKTOP ICONS*/
+
+
+
+
+
+.desktop{
+	text-align: center;
+	overflow: hidden;
+	width: 60px;
+	height: 100px;
+	color: white;
+}
+.desktop:hover{
+	background-color: rgba(248,239,239,0.1);
+	width: 60px; height: auto;
+	overflow: visible;
+	z-index: 1;	
+}
+
+
+
+
+
+/*FOR START*/
+
+
+
+
+
+ li{
+	display: inline;
+}
+.dropup{ position: relative; display: inline-block; float: left; left: 0px;}
+.dropbtn {	
+  	color: white;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 25px;
+}
+
+.dropup-content {
+	position: absolute;
+ 	display: none;
+	min-width: 160px;
+	width: 350px; height: 590px;	
+	background-color: #FF9999;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	bottom: 42px;
+	left: 0px;
+	clear: both;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	
+}
+
+li>div.dropup-content a {
+	color: black;
+	padding: 12px 16px 12px 41px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropup-content a:hover {background-color: rgba(227,193,193,0.6); width: 100%;}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+.dropup-content:hover{
+	overflow-y: scroll;
+	overflow-x:hidden;
+}
+
+
+
+.startbar{
+	background-color: red; width: 30px; float: left; height: 100%; bottom: 130px; color: white; overflow: none; display: none; 
+}
+.startbar a{
+	text-align: center;
+	text-height: 29px;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding-bottom: 10px; padding-top: 10px;
+	overflow: none;
+}
+	
+.startbar-content i{padding: 10px 5px; text-align: center;}
+.startbar-content i:hover{ background-color: rgba(255,223,223,0.2); color: white;}
+
+.dropup:hover .startbar-content{
+	display: block;
+}
+
+
+/*DROPLEFT FROM HERE ON*/
+
+
+
+
+.dropbtnleft {	
+  	color: white;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 25px;
+}
+.dropup-contentleft {
+	position: absolute;
+ 	display: none;
+	min-width: 160px;
+	width:290px; height:583px; 	
+	background-color: #FF9999;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	bottom: 39px;
+	right: 0px;
+	clear: both;
+	overflow-x: auto;
+	box-sizing: border-box;
+	padding: 15px; padding-top: 6px;
+	
+}
+
+li>div.dropup-contentleft a {
+	color: black;
+	padding: 12px 16px 12px 37px;
+	text-decoration: none;
+	display: block;
+	background-color: rgba(227,193,193,0.9)
+}
+
+.dropup-contentleft a:hover {background-color: rgba(227,193,193,0.6); width: 200px;}
+
+.dropbtnleft:hover .dropup-contentleft {
+  display: block;
+}
+
+
+
+/*battery charge*/
+
+
+
+
+
+.battery {	
+  	color: white;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 25px;
+}
+
+.battery-content {
+	position: relative;
+ 	display: none;
+	min-width: 160px;
+	width: 185px; height: auto;	
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	bottom: 50px;
+	right: 18px;
+	clear: both;
+	color: #8A8A8A;
+	
+}
+.battery:hover .battery-content{
+  display: block;
+}	
+	
+
+</style>
+</head>
+<title>Windows10</title>
+<body background="https://cdn.carbuzz.com/gallery-images/1600/523000/700/523781.jpg">
+
+<ul>
+<div class="dropup">
+<li class="dropbtn"><i class="fab fa-windows fa-2x" height="100%" style="color:white"></i>
+ <div class="dropup-content" style="clear: both;">
+  <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp" style="color: green; font-size: 20px;"></i></a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+   </div>
+ 
+	<span class="startbar">
+  <span class="startbar-content" style="text-align:center;">
+<i class="fas fa-bars" style="position: relative; top: 0px;"></i>
+<i class="fas fa-cog style="position: absolute;"></i>
+<i class="fas fa-user-friends style="position: absolute;"></i>
+
+
+  </span>
+ </span>
+</div>
+</li>
+
+
+<li><input class="input" placeholder="Type here to search"></li>
+<li><i class="far fa-envelope-open fa-2x" style="color:blue"></i></li>
+<li><i class="fab fa-firefox-browser fa-2x" style="color:orange"></i></li>
+<li><i class="fas fa-briefcase fa-2x" style="color:yellow"></i>
+
+
+
+<li class="right dropbtnleft"><i class="far fa-comment-alt fa-2x" style="color:white"></i>
+ <div class="dropup-contentleft">
+  <a href="#">Link 1</a><br>
+  <a href="#">Link 2</a><br>
+  <a href="#">Link 3</a><br>
+  </div>
+</li>
+
+
+<li class="right" style="padding-top:10px;color:white"><b>ENG</b></li> 
+<li class="right"><i class="fas fa-volume-up fa-2x" style="color:white"></i> </li>
+<li class="right battery"><i class="fas fa-battery-quarter fa-2x" style="color:white"></i>
+ <div class="battery-content">
+  1hr 25min 25% remaining
+ </div>
+</li>
+<li class="right"><i class="fas fa-wifi fa-2x" style="color:white"></i></li>
+
+</ul>
+
+<div class="desktop"><i class="fas fa-book-reader fa-3x"></i><br>
+   <p style="align: center">Books</p></div>
+<a href="https://www.ecosia.org/?c=en"><div class="desktop" style="text-decoration: none;"><i class="fas fa-tree fa-3x"></i><br>
+   <p style="align: center">Grow trees and spread the green forever</p>
+</div>
+</a>
+</body>
+</html>
